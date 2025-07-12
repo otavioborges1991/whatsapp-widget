@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Widget</title>
+  <link rel="stylesheet" href="styles/whatsapp-widget.css">
+</head>
+<body>
+    <!-- WhatsApp Widget with Tooltip
+    <div class="whatsapp-widget" onclick="openWhatsApp()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div> -->
+
+    <!-- WhatsApp Widget with Tooltip -->
+    <div class="whatsapp-widget" onclick="openWhatsApp()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span class="tooltip">Converse comigo!</span>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+        const phoneNumber = "+5547992385108"; // Replace with your WhatsApp number (e.g., 5511999999999)
+        const message = "Ola!"; // Optional default message
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
+
+
+
